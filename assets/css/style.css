@@ -1,0 +1,39 @@
+:root{
+  --background-color: rgb(6, 118, 247);
+  --text-color:white;
+}
+ body{
+   box-sizing: border-box;
+
+ }
+main {
+display: flex;
+flex-wrap:wrap;
+}
+
+article {
+padding: 15px;
+
+ flex: 1 0 500px ;
+ margin: 10px;
+ height: 200px;
+ background-color: var(--background-color);
+ color: var(--text-color);
+ border-radius: 15px;
+ border: solid 2px black;
+
+}
+
+@media screen and (max-width: 996px) {
+  header {
+    flex-direction: row;
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+
+  }
+}
